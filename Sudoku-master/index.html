@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1.0 user-scalable=no"
+    />
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="sudoku.css" />
+    <script src="sudoku.js"></script>
+  </head>
+
+  <body>
+    <h1>Sudoku</h1>
+    <hr />
+    <p>Jumlah salah: <span id="errors">0</span></p>
+
+    <!-- 9x9 board -->
+    <div id="board"></div>
+    <br />
+    <div id="digits"></div>
+
+    <button class="btn-reset" onclick="location.reload()">Reset</button>
+
+    <button class="btn-hint" onclick="myFunction()">Cara bermain</button>
+
+    <div id="myDIV">
+      <ul>
+        <li>Pilih salah satu angka 1-9</li>
+        <li>Masukkan angka ke kolom yang kosong</li>
+        <li>Jika betul maka akan menampilkan angka</li>
+        <li>Jika salah maka akan menampilkan informasi berapa kali salah</li>
+      </ul>
+    </div>
+  </body>
+</html>
